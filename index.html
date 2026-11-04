@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="The Natural Riddle turns everyday choices into surprising chains of possibility. Explore a new thought experiment every day.">
+<meta name="theme-color" content="#101b2b">
+<title>The Natural Riddle — Think beyond the obvious</title>
+<style>
+:root{--bg:#101b2b;--panel:#18283b;--panel2:#20354b;--ink:#f4f8f6;--muted:#afc3c7;--mint:#73e0c0;--lime:#c5ef8a;--line:#345064;--gold:#ffd27a}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#1c4a50 0,transparent 35%),radial-gradient(ellipse at 95% 15%,#3c3a62 0,transparent 30%),var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;min-height:100vh}
+.wrap{max-width:1020px;margin:auto;padding:22px 18px 50px}.top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:48px}.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:1.12rem;letter-spacing:.2px}.logo{width:42px;height:42px;display:grid;place-items:center;border-radius:15px;background:linear-gradient(135deg,var(--mint),var(--lime));color:#10252c;font-size:23px}.top-pill{border:1px solid var(--line);border-radius:99px;padding:7px 12px;color:var(--muted);font-size:.82rem}
+.hero{max-width:760px;margin:0 auto 28px;text-align:center}.eyebrow{color:var(--mint);font-size:.76rem;font-weight:800;letter-spacing:2px;text-transform:uppercase}.hero h1{font-size:clamp(2.5rem,7vw,5rem);line-height:.99;letter-spacing:-3px;margin:13px 0 18px}.hero h1 em{font-style:normal;color:var(--mint)}.hero p{color:var(--muted);font-size:1.08rem;max-width:610px;margin:auto}
+.layout{display:grid;grid-template-columns:1.15fr .85fr;gap:16px;max-width:900px;margin:auto}.card{background:linear-gradient(145deg,rgba(27,47,67,.98),rgba(20,35,53,.98));border:1px solid var(--line);border-radius:24px;padding:clamp(20px,4vw,30px);box-shadow:0 22px 70px #0003}.kicker{display:flex;justify-content:space-between;align-items:center;gap:10px;color:var(--muted);font-size:.82rem}.badge{background:#294d50;color:var(--mint);padding:6px 10px;border-radius:99px;font-weight:800;font-size:.75rem}.card h2{font-size:1.55rem;line-height:1.2;margin:20px 0 10px}.lead{color:#d6e4e3;margin:0 0 18px}.choices{display:grid;gap:10px;margin-top:18px}.choice{width:100%;text-align:left;color:var(--ink);background:#142438;border:1px solid #3a5668;border-radius:14px;padding:13px 15px;cursor:pointer;font:inherit;transition:.15s}.choice:hover{border-color:var(--mint);transform:translateY(-1px)}.choice.selected{background:#204744;border-color:var(--mint);box-shadow:inset 0 0 0 1px var(--mint)}.choice small{display:block;color:var(--muted);margin-top:3px}.btn{border:0;border-radius:13px;padding:13px 17px;font:inherit;font-weight:800;cursor:pointer}.primary{background:linear-gradient(120deg,var(--mint),var(--lime));color:#10252c}.secondary{background:#2a4056;color:var(--ink);border:1px solid #466176}.btn:disabled{opacity:.4;cursor:not-allowed}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.result{display:none;margin-top:18px;padding:17px;border-radius:16px;background:#173e3c;border:1px solid #36766b}.result h3{margin:0 0 8px;color:var(--mint)}.ripple-chain{display:grid;gap:8px;margin:13px 0}.ripple-step{display:flex;gap:10px;align-items:flex-start;background:#122e32;border-radius:11px;padding:10px 12px}.dot{width:25px;height:25px;flex:0 0 25px;border-radius:50%;display:grid;place-items:center;background:#2a625a;color:var(--mint);font-weight:850;font-size:.8rem}.side h3{margin:0 0 8px;font-size:1.05rem}.side p{margin:0;color:var(--muted);font-size:.92rem}.meter{height:9px;background:#0d1a29;border-radius:99px;overflow:hidden;margin:12px 0}.meter span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--mint),var(--lime));border-radius:99px;transition:width .4s}.statline{display:flex;justify-content:space-between;color:var(--muted);font-size:.85rem}.mission-list{display:grid;gap:10px;margin-top:16px}.mission{padding:12px;border:1px solid var(--line);border-radius:13px;background:#142438}.mission b{display:block}.mission span{color:var(--muted);font-size:.82rem}.note{max-width:900px;margin:16px auto 0;color:#91a9ae;font-size:.78rem;text-align:center}footer{max-width:900px;margin:32px auto 0;text-align:center;color:#8fa6ad;font-size:.82rem}footer a{color:var(--mint)}
+@media(max-width:720px){.layout{grid-template-columns:1fr}.top{margin-bottom:35px}.hero h1{letter-spacing:-2px}.top-pill{font-size:.72rem}.side{order:2}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top"><div class="brand"><div class="logo">〰</div> The Natural Riddle</div><div class="top-pill">🌍 A tiny idea can travel far</div></header>
+<section class="hero"><div class="eyebrow">A different kind of daily thought experiment</div><h1>Think beyond<br><em>the obvious.</em></h1><p>Choose one tiny action. Then explore how it could spread through a whole community. Your imagination is the experiment.</p></section>
+<main class="layout">
+<section class="card">
+ <div class="kicker"><span id="today">TODAY'S NATURAL RIDDLE</span><span class="badge" id="theme">COMMUNITY</span></div>
+ <h2 id="title">What small change could make a big difference?</h2>
+ <p class="lead" id="prompt">Pick the first move in today's ripple chain. There isn't one perfect answer—think about what might happen next.</p>
+ <div class="choices" id="choices"></div>
+ <div class="actions"><button class="btn primary" id="build" disabled>Build my ripple →</button><button class="btn secondary" id="reset">Start again</button></div>
+ <div class="result" id="result" aria-live="polite"><h3>Your possibility pathway ✨</h3><p id="resultIntro"></p><div class="ripple-chain" id="chain"></div><b id="score"></b><div class="actions"><button class="btn secondary" id="share">↗ Share my ripple</button></div></div>
+</section>
+<aside class="card side">
+ <div class="kicker"><span>YOUR IDEA JOURNAL</span><span class="badge">ON THIS DEVICE</span></div>
+ <h2 style="margin-top:18px">Ideas open doors.</h2>
+ <p>Complete an experiment to add a spark to your journal. Your entries stay in this browser—no account needed.</p>
+ <div class="statline" style="margin-top:22px"><span>Experiments explored</span><b id="count">0</b></div><div class="meter"><span id="bar"></span></div>
+ <div class="mission-list"><div class="mission"><b>🌱 Today's mission</b><span>Choose a small action and follow its possible effects.</span></div><div class="mission"><b>🧠 Think like a designer</b><span>Notice who benefits, what could go wrong, and how to improve the idea.</span></div><div class="mission"><b>🌊 Tomorrow's ripple</b><span>A new scenario arrives automatically each day.</span></div></div>
+</aside>
+</main>
+<p class="note">Ripple pathways are creative thought experiments, not guaranteed real-world outcomes or scientific predictions.</p>
+<footer>The Natural Riddle · Made for curious people everywhere<br>Free to explore. No sign-up. No data sent to a server.</footer>
+</div>
+<script>
+const experiments=[
+{theme:"COMMUNITY",title:"A quieter, kinder street",prompt:"Your neighborhood has a busy street where people rarely stop to talk. What is the best first move?",options:[
+{t:"Start a tiny sidewalk book-swap",d:"Give neighbors a low-pressure reason to pause.",chain:["A few people stop to browse a book.","Neighbors begin exchanging recommendations.","A small shared space starts to feel welcoming."],score:3},
+{t:"Invite three neighbors for a 10-minute hello",d:"Start with a personal connection.",chain:["Three neighbors meet face-to-face.","They discover one shared interest or need.","They invite someone else next time."],score:3},
+{t:"Put up a giant sign saying 'Be friendly!'",d:"Send a broad message to everyone.",chain:["People notice the message.","Some may smile, but aren't sure what to do.","A specific activity could make joining easier."],score:1}]},
+{theme:"PLANET",title:"The lunchbox mystery",prompt:"A school notices lots of unopened food thrown away after lunch. Which small experiment should happen first?",options:[
+{t:"Let students swap unopened items safely",d:"Create a simple sharing system with clear food-safety rules.",chain:["Students can choose something they will actually eat.","Less unopened food may be thrown away.","The school learns which foods students prefer."],score:3},
+{t:"Ask students to vote on next week's menu",d:"Use feedback to make lunches more appealing.",chain:["Students share what they enjoy.","The menu can better match preferences.","Fewer unwanted items may be served."],score:3},
+{t:"Make the trash bins brighter",d:"Change the look of the disposal area.",chain:["The bins become easier to notice.","Sorting may become clearer.","But the amount of unwanted food may not change."],score:1}]},
+{theme:"LEARNING",title:"The confusing homework page",prompt:"A class keeps getting stuck on the same tricky topic. What is a useful first move?",options:[
+{t:"Create a one-minute student-made explainer",d:"Ask someone who understands it to explain simply.",chain:["A student explains the idea in everyday words.","Classmates spot the step they were missing.","The explainer can be improved using their questions."],score:3},
+{t:"Start a question wall with no names",d:"Make it easier to admit confusion.",chain:["More students share what is unclear.","The teacher sees patterns in the questions.","The next lesson can focus on the biggest gap."],score:3},
+{t:"Give everyone twice as much homework",d:"Add more practice immediately.",chain:["Students spend more time on the topic.","Some may improve through repetition.","But the original confusion might remain."],score:1}]},
+{theme:"NATURE",title:"A tiny habitat in a big city",prompt:"There is a sunny, unused corner near a community building. What could help local nature?",options:[
+{t:"Plant a small patch of native flowers",d:"Choose plants suited to the local area.",chain:["Native flowers provide seasonal resources.","Pollinators may visit when flowers are blooming.","Neighbors learn which plants support local wildlife."],score:3},
+{t:"Put out a sign asking people to notice birds",d:"Start with curiosity and observation.",chain:["People begin noticing local birds.","They share sightings and questions.","That interest could lead to habitat improvements."],score:2},
+{t:"Cover the area with decorative plastic grass",d:"Make the corner look green quickly.",chain:["The corner looks tidy from a distance.","It adds little habitat value.","A living planting plan would support more life."],score:0}]},
+{theme:"WELLBEING",title:"The five-minute reset",prompt:"A group of students feels overwhelmed between classes. Which small idea is worth testing?",options:[
+{t:"Create a quiet five-minute corner",d:"Offer a calm place with simple, clear guidelines.",chain:["Students have a place to pause.","A short reset may help some feel ready for class.","Feedback helps the school make the space more useful."],score:3},
+{t:"Start a friendly check-in question",d:"Make it normal to ask how people are doing.",chain:["People have an easy way to share how they feel.","Friends may notice when someone needs support.","A trusted adult can help when needed."],score:3},
+{t:"Make everyone compete to finish fastest",d:"Turn the break into another contest.",chain:["Some people may enjoy the competition.","Others may feel more pressure.","A calmer option may work better for the whole group."],score:0}]},
+{theme:"CREATIVITY",title:"A town with blank walls",prompt:"A public wall looks dull and forgotten. What is a thoughtful first step?",options:[
+{t:"Invite local people to submit tiny drawings",d:"Collect ideas before deciding what belongs on the wall.",chain:["People contribute small pieces of art.","The community sees its own ideas represented.","A shared mural can grow from many voices."],score:3},
+{t:"Create a rotating chalk-art space",d:"Make the wall change with community participation.",chain:["Someone draws the first design.","Others add their own ideas over time.","The wall becomes a changing community canvas."],score:3},
+{t:"Paint it one person's favorite color",d:"Make a fast decision without asking others.",chain:["The wall gets a fresh coat.","Some people like the change.","A shared design process could make more people feel included."],score:1}]}
+];
+const day=Math.floor(Date.UTC(new Date().getFullYear(),new Date().getMonth(),new Date().getDate())/86400000);
+const exp=experiments[((day%experiments.length)+experiments.length)%experiments.length];
+const $=id=>document.getElementById(id);let selected=-1;
+let history=[];try{history=JSON.parse(localStorage.getItem("naturalRiddleJournal")||"[]");if(!Array.isArray(history))history=[];}catch(e){history=[];}
+$("today").textContent=new Date().toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric"}).toUpperCase();
+$("theme").textContent=exp.theme;$("title").textContent=exp.title;$("prompt").textContent=exp.prompt;
+function updateJournal(){$("count").textContent=history.length;$("bar").style.width=Math.min(100,history.length/7*100)+"%";}
+exp.options.forEach((o,i)=>{const b=document.createElement("button");b.className="choice";b.innerHTML=`<strong>${String.fromCharCode(65+i)}. ${o.t}</strong><small>${o.d}</small>`;b.addEventListener("click",()=>{selected=i;document.querySelectorAll(".choice").forEach(x=>x.classList.remove("selected"));b.classList.add("selected");$("build").disabled=false;$("result").style.display="none";});$("choices").appendChild(b);});
+$("build").addEventListener("click",()=>{if(selected<0)return;const o=exp.options[selected];$("resultIntro").textContent="You chose: "+o.t;$("chain").innerHTML="";o.chain.forEach((s,i)=>{const d=document.createElement("div");d.className="ripple-step";d.innerHTML=`<span class="dot">${i+1}</span><span>${s}</span>`;$("chain").appendChild(d);});const words=["A ripple to rethink","A ripple in motion","A strong ripple pathway"];const label=o.score===3?words[2]:o.score===2?words[1]:words[0];$("score").textContent=label+" · "+o.score+"/3 spark points";$("result").style.display="block";const key=new Date().toISOString().slice(0,10);if(!history.some(x=>x.date===key)){history.push({date:key,title:exp.title,choice:o.t,score:o.score});localStorage.setItem("naturalRiddleJournal",JSON.stringify(history));updateJournal();}else{const old=history.find(x=>x.date===key);old.choice=o.t;old.score=o.score;localStorage.setItem("naturalRiddleJournal",JSON.stringify(history));}});
+$("reset").addEventListener("click",()=>{selected=-1;document.querySelectorAll(".choice").forEach(x=>x.classList.remove("selected"));$("build").disabled=true;$("result").style.display="none";});
+$("share").addEventListener("click",async()=>{const o=exp.options[selected];const msg=`I explored The Natural Riddle!\n${exp.title}\nMy first move: ${o.t}\nWhat ripple would you start? ${location.href}`;try{if(navigator.share)await navigator.share({title:"My Natural Riddle experiment",text:msg,url:location.href});else if(navigator.clipboard){await navigator.clipboard.writeText(msg);$("share").textContent="Copied! Share it";}else prompt("Copy your ripple:",msg);}catch(e){}});
+updateJournal();
+</script>
+</body>
+</html>
